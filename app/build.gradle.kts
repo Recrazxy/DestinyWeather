@@ -7,6 +7,10 @@ android {
     namespace = "com.example.destinyweather"
     compileSdk = 34
 
+    viewBinding {
+        enable = true
+    }
+
     defaultConfig {
         applicationId = "com.example.destinyweather"
         minSdk = 24
@@ -45,4 +49,23 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.androidx.recyclerview.selection)
+    implementation(libs.androidx.lifecycle.extensions)
+    implementation("androidx.lifecycle:lifecycle-livedata:2.2.0")
+    implementation("com.google.android.material:material:1.5.0")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    implementation("com.squareup.retrofit2:adapter-rxjava2:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+
+
+
+
+
+
+
+
+
 }
